@@ -1,0 +1,16 @@
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\bin\Debug\net5.0\Command-Pattern.exe
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\bin\Debug\net5.0\Command-Pattern.deps.json
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\bin\Debug\net5.0\Command-Pattern.runtimeconfig.json
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\bin\Debug\net5.0\Command-Pattern.runtimeconfig.dev.json
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\bin\Debug\net5.0\Command-Pattern.dll
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\bin\Debug\net5.0\ref\Command-Pattern.dll
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\bin\Debug\net5.0\Command-Pattern.pdb
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\obj\Debug\net5.0\Command-Pattern.csprojAssemblyReference.cache
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\obj\Debug\net5.0\Command-Pattern.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\obj\Debug\net5.0\Command-Pattern.AssemblyInfoInputs.cache
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\obj\Debug\net5.0\Command-Pattern.AssemblyInfo.cs
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\obj\Debug\net5.0\Command-Pattern.csproj.CoreCompileInputs.cache
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\obj\Debug\net5.0\Command-Pattern.dll
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\obj\Debug\net5.0\ref\Command-Pattern.dll
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\obj\Debug\net5.0\Command-Pattern.pdb
+C:\Users\Marius\source\repos\semester4\SWD\Command-Pattern\Command-Pattern\obj\Debug\net5.0\Command-Pattern.genruntimeconfig.cache
