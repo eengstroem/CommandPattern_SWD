@@ -8,24 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Marius\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\EE199\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marius\\source\\repos\\semester4\\SWD\\Command-Pattern\\Command-Pattern\\Command-Pattern.csproj",
+      "projectUniqueName": "C:\\Users\\EE199\\OneDrive\\Skrivebord\\SWD\\SWD_CommandPattern\\Command-Pattern\\Command-Pattern.csproj",
       "projectName": "Command-Pattern",
-      "projectPath": "C:\\Users\\Marius\\source\\repos\\semester4\\SWD\\Command-Pattern\\Command-Pattern\\Command-Pattern.csproj",
-      "packagesPath": "C:\\Users\\Marius\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marius\\source\\repos\\semester4\\SWD\\Command-Pattern\\Command-Pattern\\obj\\",
+      "projectPath": "C:\\Users\\EE199\\OneDrive\\Skrivebord\\SWD\\SWD_CommandPattern\\Command-Pattern\\Command-Pattern.csproj",
+      "packagesPath": "C:\\Users\\EE199\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\EE199\\OneDrive\\Skrivebord\\SWD\\SWD_CommandPattern\\Command-Pattern\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Marius\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\EE199\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
