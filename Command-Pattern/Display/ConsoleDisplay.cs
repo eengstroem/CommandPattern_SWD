@@ -7,18 +7,68 @@ using System.Threading.Tasks;
 namespace Command_Pattern
 {
 
-
     public class ConsoleDisplay : IDisplay
-    {
+    { 
+
+        private int _previousPos = 0;
+        private int _totalTime = 0;
+        private int _barLength = 0;
+        private double _ratio = 0;
+        private char previousLoadChar;
+
+        public void InitNewLoadingBar(int TotalTime, int barLength)
+        {
+            Console.WriteLine("Loading...");
+            _totalTime = TotalTime/1000;
+            _barLength = barLength;
+            _ratio = (double)_barLength / _totalTime;
+            _previousPos = 0;
+            Console.SetCursorPosition(_barLength + 1, Console.CursorTop = 1);
+            previousLoadChar = '|';
+            Console.Write("|");
+        }
 
         public void DisplayTimeRemaining(int ms)
         {
-            Console.WriteLine((ms / 1000) + " seconds left.");
+            Console.SetCursorPosition(_previousPos, Console.CursorTop = 1);
+            for (int i = 0; i < _ratio * (ms / 1000); i++)
+            {
+                Console.Write("#");
+            }
+            _previousPos = (int)(_ratio * (ms / 1000)) + _previousPos;
+
+            switch(previousLoadChar)
+            {
+                case '|':
+                    Console.SetCursorPosition(_barLength + 1, Console.CursorTop = 1);
+                    Console.Write("/");
+                    previousLoadChar = '/';
+                    break;
+                case '/':
+                    Console.SetCursorPosition(_barLength + 1, Console.CursorTop = 1);
+                    Console.Write("-");
+                    previousLoadChar = '-';
+                    break;
+                case '-':
+                    Console.SetCursorPosition(_barLength + 1, Console.CursorTop = 1);
+                    Console.Write("|");
+                    previousLoadChar = '|';
+                    break;
+            }
         }
 
         public void PrintStatus(string message)
         {
+            Console.CursorTop = 2;
+            ClearCurrentConsoleLine();
             Console.WriteLine(message);
+        }
+        public static void ClearCurrentConsoleLine()
+        {
+            int currentLineCursor = Console.CursorTop;
+            Console.SetCursorPosition(0, Console.CursorTop);
+            Console.Write(new string(' ', Console.WindowWidth));
+            Console.SetCursorPosition(0, currentLineCursor);
         }
     }
 }

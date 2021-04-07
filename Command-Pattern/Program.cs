@@ -19,6 +19,7 @@ namespace Command_Pattern
             DinnerControl ctrl = new(disp, inv);
 
             ctrl.HaveDinner();
+
         }
     }
 }

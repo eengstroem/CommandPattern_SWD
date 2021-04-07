@@ -8,6 +8,7 @@ namespace Command_Pattern
 {
     public interface IDisplay
     {
+        void InitNewLoadingBar(int TotalTime, int barLength);
         void DisplayTimeRemaining(int ms);
         void PrintStatus(string message);
     }

@@ -19,15 +19,14 @@ namespace Command_Pattern
 
         public void HaveDinner()
         {
-            int EstimatedDuration = _invoker.GetTotalEstimatedDuration();
+            _disp.InitNewLoadingBar(_invoker.GetTotalEstimatedDuration(), 30); // 15 sec
 
-            _disp.DisplayTimeRemaining(EstimatedDuration);
-            EstimatedDuration -= _invoker.MakeDinner();
-            _disp.DisplayTimeRemaining(EstimatedDuration);
-            EstimatedDuration -= _invoker.EatDinner();
-            _disp.DisplayTimeRemaining(EstimatedDuration);
-            EstimatedDuration -= _invoker.DoTheDishes();
-            _disp.DisplayTimeRemaining(EstimatedDuration);
+            _disp.DisplayTimeRemaining(_invoker.MakeDinner()); // 15 sec - 8 sec = 7 sec
+
+            _disp.DisplayTimeRemaining(_invoker.EatDinner());// 7 sec - 4 sec = 3 sec
+
+            _disp.DisplayTimeRemaining(_invoker.DoTheDishes());// 3 sec - 3 sec = 0 sec
+
             _disp.PrintStatus("DONE");
 
         }
