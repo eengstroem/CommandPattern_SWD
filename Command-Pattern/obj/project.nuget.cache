@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EZOh6wP9/IV5totoM0MSxXp8o+foX0AO+6T9Lz7m4MhcimRYDmvxwKS2LWfKFF0T22I4aM93Gr47MZrFURzHkw==",
+  "dgSpecHash": "W2jafbUE0atj/CvqD4Cc+bVE98DgR15jflQhYY1V0jYUNgNslBQgiUisfGkbWmu3MN2/juZPmgHGZNbeGbxwyA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\EE199\\OneDrive\\Skrivebord\\SWD\\SWD_CommandPattern\\Command-Pattern\\Command-Pattern.csproj",
+  "projectFilePath": "C:\\Users\\Pepe\\source\\repos\\CommandPattern_SWD\\Command-Pattern\\Command-Pattern.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

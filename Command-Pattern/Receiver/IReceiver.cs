@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Command_Pattern
 {
-    public interface Ireceiver
+    public interface IReceiver
     {
-        int EstimatedDurationLeft();
+        void EatDinner();
+        void MakeDinner();
+        void DoTheDishes();
     }
 }

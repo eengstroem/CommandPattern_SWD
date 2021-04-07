@@ -8,6 +8,7 @@ namespace Command_Pattern
 {
     public interface ICommand
     {
-        int Execute();
+        void Execute();
+        int Duration();
     }
 }
