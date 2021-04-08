@@ -19,13 +19,13 @@ namespace Command_Pattern
 
         public void HaveDinner()
         {
-            _disp.InitNewLoadingBar(_invoker.GetTotalEstimatedDuration(), 30); // 15 sec
+            _disp.InitNewLoadingBar(_invoker.GetTotalEstimatedDuration(), 30);
 
-            _disp.DisplayTimeRemaining(_invoker.MakeDinner()); // 15 sec - 8 sec = 7 sec
+            _disp.DisplayTimeRemaining(_invoker.MakeDinner());
 
-            _disp.DisplayTimeRemaining(_invoker.EatDinner());// 7 sec - 4 sec = 3 sec
+            _disp.DisplayTimeRemaining(_invoker.EatDinner());
 
-            _disp.DisplayTimeRemaining(_invoker.DoTheDishes());// 3 sec - 3 sec = 0 sec
+            _disp.DisplayTimeRemaining(_invoker.DoTheDishes());
 
             _disp.PrintStatus("DONE");
 

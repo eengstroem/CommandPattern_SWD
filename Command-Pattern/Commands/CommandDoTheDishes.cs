@@ -16,7 +16,7 @@ namespace Command_Pattern
 
         public int Duration()
         {
-            return 3000; //3
+            return 3000;
         }
 
         public void Execute()
