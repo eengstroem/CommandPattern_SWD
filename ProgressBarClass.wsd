@@ -1,0 +1,126 @@
+@startuml Class Diagram
+/'
+ICommand
+ '/
+interface ICommand
+{
+ + Execute() : void 
+ + Duration() : int     
+
+}
+/'
+IReceiver
+'/
+interface IReceiver
+{
+    + EatDinner() : void 
+    + MakeDinner() : void 
+    + DoTheDishes() : void 
+}
+/'
+Receiver
+'/
+class Receiver
+{
+    - IDisplay : _display
+    + Receiver(IDisplay)
+}
+/'
+CommandDoTheDishes
+'/
+class CommandDoTheDishes
+{
+    - IReceiver _receiver
+    + CommandDoTheDishes (IReceiver)
+    + Duration() : int 
+    + Execute() : void 
+}
+/'
+CommandEatDinner
+'/
+class CommandEatDinner
+{
+    - IReceiver _receiver
+    + CommandEatDinner (IReceiver)
+    + Duration() : int 
+    + Execute() : void 
+}
+/'
+CommandMakeDinner
+'/
+class CommandMakeDinner
+{
+    - IReceiver _receiver
+    + CommandMakeDinner (IReceiver)
+    + Duration() : int 
+    + Execute() : void 
+}
+/'
+Invoker
+'/
+class Invoker
+{
+    - ICommand 
+    - ICommand
+    - ICommand
+
+
+    + Invoker(ICommand, ICommand, ICommand)
+    + EatDinner() : int
+    + MakeDinner() : int 
+    + DoTheDishes() : int
+    + GetTotalEstimatedDuration() : int
+
+}
+/'
+DinnerControl
+'/
+class DinnerControl
+{
+    - Invoker
+    + DinnerControl(IDisplay, Invoker) 
+    + HaveDinner() : void 
+}
+/'
+IDisplay
+'/
+Interface IDisplay
+{
+    + InitNewLoadingBar(int, int) : void 
+    + DisplayTimeRemaining(int) : void 
+    + PrintStatus(string) : void 
+}
+/'
+ConsoleDisplay
+'/
+class ConsoleDisplay
+{
+    - _previousPos : int
+    - _totalTime : int
+    - _barLength : int 
+    - _ratio : double
+    - previousLoadChar : char
+
+   
+    + ClearCurrentConsoleLine() : void
+
+}
+
+
+/'
+Relations
+'/
+IReceiver <-- Receiver
+ICommand <-- CommandDoTheDishes
+ICommand <-- CommandMakeDinner
+ICommand <-- CommandEatDinner
+CommandDoTheDishes --> IReceiver
+CommandMakeDinner --> IReceiver
+CommandEatDinner --> IReceiver
+
+IDisplay <-- ConsoleDisplay
+DinnerControl <-- Invoker
+IReceiver <-- ConsoleDisplay
+ICommand <-- Invoker
+
+@enduml

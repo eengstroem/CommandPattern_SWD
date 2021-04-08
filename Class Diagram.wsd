@@ -1,0 +1,20 @@
+@startuml Class Diagram
+class Invoker
+interface Command
+{
+    execute()
+}
+Class Command1
+{
+    execute()
+}
+class Receiver1
+{
+    action1()
+}
+
+Invoker - Command : command >
+Command1 --|> Command
+Command1 --> Receiver1
+
+@enduml

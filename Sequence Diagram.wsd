@@ -1,0 +1,16 @@
+@startuml SequenceDiagram
+participant Invoker
+participant Command1
+participant Receiver1
+
+Invoker -> Command1 : execute()
+activate Invoker
+Command1 -> Receiver1 : action1()
+activate Command1
+activate Receiver1
+
+deactivate Invoker
+deactivate Command1
+deactivate Receiver1
+
+@enduml 
